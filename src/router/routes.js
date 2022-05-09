@@ -9,9 +9,10 @@ const routes = [
   },
   {
     path: '/auth',
-    component: () => import('layouts/LoginLayout.vue'),
+    component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: 'login', component: () => import('pages/LoginPage.vue') }
+      { path: 'login', component: () => import('pages/LoginPage.vue') },
+      { path: 'login2', component: () => import('pages/LoginPage.vue') }
     ]
   },
 
